@@ -1,0 +1,11 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±É·ïúÿÿÿÿ8íïˆï1J$e3b0d66a-3b12-4823-8085-37192df70489
+m	java:S106"+Replace this use of System.out by a logger.(Úèµ¦8òïˆï1J$c33471dd-3609-4211-903d-0f989152d29d
+r	java:S106"+Replace this use of System.out by a logger.(İó§ıÿÿÿÿ8òïˆï1J$a1639c5e-0a92-4365-9d13-314eac71680b
+r	java:S106"+Replace this use of System.out by a logger.(ûúúÿÿÿÿ8òïˆï1J$07da74a0-5fc9-4dd9-9cae-9fba3e9c82d8
+r	java:S106"+Replace this use of System.out by a logger.(³¼Âåıÿÿÿÿ8òïˆï1J$8b0d7ceb-cdb1-48d8-b8d9-1d328da63fc9
+r	java:S106"+Replace this use of System.out by a logger.(”ôÙŸúÿÿÿÿ8òïˆï1J$562eb59c-a1f1-4618-8e9b-a83ddcc2b475
+m
+java:S1068"+Remove this unused "SCANNER" private field.(§Ç38¦ëïˆï1J$da3dc50f-e03c-4ad1-9aa4-cfbc8c05df02
+L
+java:S1068"*Remove this unused "RANDOM" private field.(ì¯ğÎşÿÿÿÿ8‡õØ‰ï1

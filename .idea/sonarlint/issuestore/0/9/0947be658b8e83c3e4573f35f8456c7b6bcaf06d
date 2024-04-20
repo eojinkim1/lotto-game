@@ -1,0 +1,27 @@
+
+š	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Â¨•ù8Úÿ”Üï1J$53fc4db9-0554-4731-9a03-304cb7b56a6e
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±É·ïúÿÿÿÿ8Ûÿ”Üï1J$483f2e01-4e57-41ed-bbb1-37c3bce254f9
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®õŸÞ8 €•Üï1J$8c365242-cddb-43eb-94da-4e51ac51ba04
+«
+java:S3008"cRename this field "INPUT_STR_WINNING_NUMBER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Á§†ýÿÿÿÿ8 €•Üï1J$565fc0c5-cea0-4c60-b788-df5c98dda542
+r
+java:S1197"*Move the array designators [] to the type.(Â¾þ·ýÿÿÿÿ8¥€•Üï1J$75c9e86f-6eaf-4698-8ef8-d593582ffc3d
+r	java:S106"+Replace this use of System.out by a logger.(ƒ‚Øûüÿÿÿÿ8¥€•Üï1J$2eb0b3e5-d1bb-480d-a89b-144defba45c5
+r	java:S106 "+Replace this use of System.out by a logger.(Ê›åþÿÿÿÿÿ8¦€•Üï1J$e970f25f-586d-4bfd-a17c-67bd1e8015bd
+r	java:S106Q"+Replace this use of System.out by a logger.(³¼Âåýÿÿÿÿ8§€•Üï1J$166c1c0d-a6a4-4dd1-9b5e-6271c4f3fb26
+~	java:S125#"<This block of commented-out lines of code should be removed.(î¯ÔÉ8áú–Üï1J$892a4a6c-97c5-469e-af17-a3386bc1fade
+r	java:S106R"+Replace this use of System.out by a logger.(”ôÙŸúÿÿÿÿ8§€•Üï1J$7d13f325-1c6d-4d5d-a0f2-e94e748e2537
+r	java:S106S"+Replace this use of System.out by a logger.(Ûý­ûÿÿÿÿ8§€•Üï1J$bc8c06ff-63a5-4e6d-aafa-ef84a33ee6a3
+m	java:S106T"+Replace this use of System.out by a logger.(ü„Ÿè8§€•Üï1J$2751d27a-abf5-4c84-9635-72200f61aa31
+r	java:S106U"+Replace this use of System.out by a logger.(âä´Žÿÿÿÿÿ8§€•Üï1J$96bb7da6-bb79-4798-9d5d-96926fbf1a6f
+r	java:S106V"+Replace this use of System.out by a logger.(Œ›³þÿÿÿÿ8§€•Üï1J$649d7943-7f60-4e9e-a501-ffe6d2e6fb4d
+r	java:S106W"+Replace this use of System.out by a logger.(û¾àçúÿÿÿÿ8§€•Üï1J$2f0ca5e9-77dd-4dba-b788-b162a936e107
+m	java:S106X"+Replace this use of System.out by a logger.(÷õøÌ8§€•Üï1J$d3eac906-7f4e-454e-a7f5-751df9a14978
+
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(Ý§18âú–Üï1J$5dccab1d-4f28-4a75-a15e-2719ae25c67f
+m
+java:S1068	"+Remove this unused "SCANNER" private field.(§Ç38âú–Üï1J$a8cc307f-4d29-435d-8302-0981090ba4c2
+r
+java:S1068"/Remove this unused "inputLength" private field.(®õŸÞ8âú–Üï1J$19d4cd13-4251-41de-a48f-690d14ac5e5a
+„
+java:S1068"<Remove this unused "INPUT_STR_WINNING_NUMBER" private field.(£Á§†ýÿÿÿÿ8âú–Üï1J$9739d4bd-d22d-4ef5-ae40-0e1b349155ff
