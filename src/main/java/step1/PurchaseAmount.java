@@ -1,10 +1,14 @@
 package step1;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class PurchaseAmount {
     private static final Scanner SCANNER = new Scanner(System.in);
+    private static final Random RANDOM = new Random();
+
     private static final int PRICE = 1_000;
     private int payment = 0;
 
@@ -25,5 +29,24 @@ public class PurchaseAmount {
             }
         }
         return payment;
+    }
+    public void myLotto(){
+        int randomLottoNumber[] = new int[6];
+        int quantity = buyLotto();
+
+        System.out.println(quantity + "개를 구매했습니다.");
+        for (int i = 0; i < quantity; i++) {
+            for (int j = 0; j < randomLottoNumber.length; j++) {
+                int lottoNumber = RANDOM.nextInt(45) + 1;
+                randomLottoNumber[j] = lottoNumber;
+                for (int k = 0; k < j; k++) {
+                    if (randomLottoNumber[j] == randomLottoNumber[k]) {
+                        j--;
+                        break;
+                    }
+                }
+            }
+            System.out.println(Arrays.toString(randomLottoNumber));
+        }
     }
 }
