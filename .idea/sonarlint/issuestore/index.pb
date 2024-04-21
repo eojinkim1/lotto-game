@@ -3,14 +3,10 @@
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-N
-src/main/java/step1/Lotto.java,f/d/fdc8bbcb26fb1b1f3d4d9a247e95d64e81a94805
 R
 "src/main/java/step1/LottoGame.java,0/9/0947be658b8e83c3e4573f35f8456c7b6bcaf06d
 W
 'src/main/java/step1/PurchaseAmount.java,f/b/fb826105b64d4e270374ba31e981113726b5083c
-M
-src/main/java/step1/test.java,3/e/3eebd13a09acdb072d866a2e3248b0f1c7bb6c7f
 V
 &src/main/java/step1/WinningNumber.java,7/e/7eb687984c10a51afa181da4bc7de44ccb982c3e
 ]
