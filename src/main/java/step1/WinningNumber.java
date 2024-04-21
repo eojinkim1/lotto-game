@@ -8,17 +8,16 @@ public class WinningNumber {
     private static final int INPUT_LENGTH = 6;
     private static String[] inputStrWinningNumber = new String[6];
 
-    public static void main(String[] args) {
-        numberConfirm();
-    }
-
-    public static void numberConfirm() {
+//    public static void main(String[] args) {
+//        numberConfirm();
+//    }
+    public void numberConfirm() {
         while (true) {
             System.out.println("당첨 번호를 입력해 주세요");
             try {
                 String inputWinningNumber = SCANNER.next();
-
                 inputStrWinningNumber = inputWinningNumber.split(",");
+
                 if (!isValidInput(inputStrWinningNumber)) {
                     continue;
                 }
@@ -37,15 +36,15 @@ public class WinningNumber {
         for (int i = 0; i < INPUT_LENGTH; i++) {
             winningNumber[i] = Integer.parseInt(inputStrWinningNumber[i].trim());
         }
-        for (int number : winningNumber) {
-            System.out.print(number);
-        }
+//        for (int number : winningNumber) { 당첨번호 확인
+//            System.out.print(number);
+//        }
         int bonusNumber = inputBonusNumber();
         while (deduplication(winningNumber, bonusNumber)){
             System.out.println("보너스 번호가 당첨 번호와 중복됩니다. 다시 입력해주세요.");
             bonusNumber = inputBonusNumber();
         }
-        System.out.println(bonusNumber);
+//        System.out.println(bonusNumber); 보너스 번호 확인
     }
 
     private static boolean deduplication(int[] winningNumbers, int bonusNumber){
