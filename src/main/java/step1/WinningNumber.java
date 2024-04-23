@@ -7,10 +7,8 @@ public class WinningNumber {
     private static final Scanner SCANNER = new Scanner(System.in);
     private static final int INPUT_LENGTH = 6;
     private static String[] inputStrWinningNumber = new String[6];
+    private static int bonusNumber = 0;
 
-//    public static void main(String[] args) {
-//        numberConfirm();
-//    }
     public void numberConfirm() {
         while (true) {
             System.out.println("당첨 번호를 입력해 주세요");
@@ -32,21 +30,25 @@ public class WinningNumber {
                 System.out.println("1~45 사이의 숫자를 (,)로 구분하여 6개의 값을 입력해주세요.#4");
             }
         }
-        int[] winningNumber = new int[INPUT_LENGTH];
-        for (int i = 0; i < INPUT_LENGTH; i++) {
-            winningNumber[i] = Integer.parseInt(inputStrWinningNumber[i].trim());
-        }
-//        for (int number : winningNumber) { 당첨번호 확인
-//            System.out.print(number);
-//        }
-        int bonusNumber = inputBonusNumber();
+        int[] winningNumber = getWinningNumber();
+
+        bonusNumber = inputBonusNumber();
         while (deduplication(winningNumber, bonusNumber)){
             System.out.println("보너스 번호가 당첨 번호와 중복됩니다. 다시 입력해주세요.");
             bonusNumber = inputBonusNumber();
         }
-//        System.out.println(bonusNumber); 보너스 번호 확인
     }
 
+    public int[] getWinningNumber(){
+        int[] winningNumbers = new int[INPUT_LENGTH];
+        for (int i = 0; i < INPUT_LENGTH; i++) {
+            winningNumbers[i] = Integer.parseInt(inputStrWinningNumber[i].trim());
+        }
+        return winningNumbers;
+    }
+    public int getBonusNumber(){
+        return bonusNumber;
+    }
     private static boolean deduplication(int[] winningNumbers, int bonusNumber){
         for (int number : winningNumbers) {
             if (number == bonusNumber){
