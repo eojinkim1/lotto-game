@@ -1,23 +1,28 @@
 package step1;
 
+import java.util.Scanner;
+
 public class LottoGame {
+    private static final Scanner SCANNER = new Scanner(System.in);
+
     public static void main(String[] args) {
-        PurchaseAmount purchaseAmount = new PurchaseAmount();
+        LottoStore lottoStore = new LottoStore();
         WinningNumber winningNumber = new WinningNumber();
 
-        purchaseAmount.myLotto();
-
-        while (true){
+        while (true) {
+            System.out.println("구입 금액을 입력해 주세요.");
+            try {
+                int payment = Integer.parseInt(SCANNER.next());
+                System.out.println(lottoStore.sellLotto(payment));
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+            }
+            break;
+        }
+        while (true) {
             winningNumber.numberConfirm();
             break;
         }
-////        일치 조건 문
-////        for (int i = 0; i < quantity; i++) {
-////            for (int j = 0; j < 6; j++) {
-////
-////            }
-////        }
-
 
         System.out.println("당첨통계");
         System.out.println("---");
@@ -29,3 +34,4 @@ public class LottoGame {
         System.out.println("총 수익률은 " + "" + "% 입니다.");
     }
 }
+
