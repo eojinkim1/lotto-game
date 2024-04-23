@@ -4,12 +4,14 @@ import java.util.Random;
 
 public class Lotto {
     private int[] numbers; //글로벌 변수,필드 변수, 인스턴트 변수, 속성값
+    private static final int MINIMUM_NUMBER = 1;
+    private static final int MAXIMUM_NUMBER = 45;
 
     public Lotto(int[] numbers) { // 생성자 new 로 밖에서 불릴 때 호출되는 거(로컬 변수) //함수는 초기화 용도 = 초기화는 변수에 어떤 값을 할당하는 것을 말함
         validNumbers(numbers);
         this.numbers = numbers; // this(글로벌 변수, 인스턴트 변수), 로컬에 있는 변수를 뜻함
     }
-    public static Lotto makeLotto(){
+    public static Lotto random(){
         Random random = new Random();
         int[] numbers = new int[6];
         for (int i = 0; i < 6; i++) {
@@ -20,7 +22,7 @@ public class Lotto {
 
     private void validNumbers(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < 1 || numbers[i] > 45){
+            if (numbers[i] < MINIMUM_NUMBER || numbers[i] > MAXIMUM_NUMBER){
                 throw new IllegalArgumentException("1~45범위 값을 초과 했습니다.");
             }
         }
