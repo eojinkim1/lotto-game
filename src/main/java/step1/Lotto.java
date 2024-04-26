@@ -14,7 +14,7 @@ public class Lotto {
         for (int i = 1; i <= 45; i++) {
             numbers.add(i);
         }
-        // 1 ~ 45
+
         Collections.shuffle(numbers);
         Set<LottoNumber> lottoNumbers = new HashSet<>();
         for (int i = 0; i < 6; i++) {
