@@ -9,7 +9,7 @@ public class LottoNumber {
 
     public LottoNumber(int number) {
         if (number < MINIMUM_NUMBER || number > MAXIMUM_NUMBER){
-            throw new IllegalArgumentException("숫자 생성 범위를 초과하였습니다.");
+            throw new IllegalArgumentException("숫자 생성 범위를 초과하였습니다.\n6개의 숫자를 입력해주세요.");
         }
         this.number = number;
     }
@@ -32,5 +32,8 @@ public class LottoNumber {
         return "LottoNumber{" +
                 "number=" + number +
                 '}';
+    }
+    public int getNumber() {
+        return number;
     }
 }
