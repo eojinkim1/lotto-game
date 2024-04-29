@@ -27,4 +27,19 @@ public class Lotto {
     public Set<LottoNumber> getNumbers() {
         return new HashSet<>(numbers);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        for (LottoNumber number : numbers) {
+            result.append(number.getNumber()).append(", ");
+        }
+        if (!numbers.isEmpty()) {
+            result.setLength(result.length() - 2); // 마지막 쉼표와 공백 제거
+        }
+        result.append("]");
+        return result.toString();
+    }
 }
+
