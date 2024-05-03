@@ -25,7 +25,9 @@ public class LottoGame {
         int quantity = PAYMENT / PRICE;
         System.out.println(quantity + "개를 구매했습니다.");
         List<Lotto> lottoList = lottoStore.sellLotto(PAYMENT);
-        System.out.println(lottoList);
+        for (Lotto lotto : lottoList) {
+            System.out.println(lotto);
+        } 
 
         while (true) {
             System.out.println("당첨 번호를 입력해주세요.");
