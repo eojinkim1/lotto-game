@@ -53,27 +53,32 @@ public class LottoGame {
                 continue;
             }
             Lotto winningLotto = new Lotto(winningNumbers);
-            System.out.println(winningLotto);
 
+            int inputBonusNumber;
+            LottoNumber bonusNumber;
             while (true) {
                 System.out.println("보너스 번호를 입력하세요");
-                int inputBonusNumber;
                 try {
                     inputBonusNumber = Integer.parseInt(SCANNER.next());
                     if (inputBonusNumber < 1 || inputBonusNumber > 45) {
-                        throw new IllegalArgumentException("1부터 45 사이의 숫자를 입력해주세요.");
+                        throw new IllegalArgumentException("1~45 사이의 숫자를 입력해주세요.");
                     }
-                    LottoNumber bonusNumber = new LottoNumber(inputBonusNumber);
+                    bonusNumber = new LottoNumber(inputBonusNumber);
                     if (winningNumbers.contains(bonusNumber)) {
                         throw new IllegalArgumentException("보너스 번호는 당첨 번호와 중복되면 안 됩니다.");
                     }
                 } catch (IllegalArgumentException e) {
-                    System.out.println("1부터 45 사이의 숫자를 당첨 번호와 중복되지 않게 입력해주세요.");
+                    System.out.println("1~45 사이의 숫자를 당첨 번호와 중복되지 않게 입력해주세요.");
+                    continue;
                 }
                 break;
             }
 
-//            WinningNumber rank = new WinningNumber(winningLotto, new LottoNumber(inputBonusNumber));
+            WinningNumber rank = new WinningNumber(winningLotto, bonusNumber);
+
+            int ranking = rank.rank(lottoList.get(0));
+            System.out.println(ranking);
+
             System.out.println("당첨통계");
             System.out.println("---");
             System.out.println("3개 일치 (5,000원) - " + "변수" + "개");
