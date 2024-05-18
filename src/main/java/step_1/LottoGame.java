@@ -82,7 +82,7 @@ public class LottoGame {
             throw new IllegalArgumentException("1부터 45 사이의 숫자를 입력해주세요.");
         }
         LottoNumber lottoNumber = new LottoNumber(number);
-        if (!winningNumbers.add(lottoNumber)) {
+        if (winningNumbers != null && !winningNumbers.add(lottoNumber)) {
             throw new IllegalArgumentException("중복된 숫자를 입력했습니다. 중복 없이 다시 입력해주세요.");
         }
         return lottoNumber;
